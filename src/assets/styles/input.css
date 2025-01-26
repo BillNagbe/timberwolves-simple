@@ -69,18 +69,55 @@ li {
 }
 
 .breadcrumb-container {
-    outline: 1px solid;
-    height: fit-content; 
-    padding: 0 2.5rem;
+    height: max-content;
 }
 
 .breadcrumb-list {
-    margin: 0 auto;
-    padding: 0.5rem;
+    float: right;
     background-color: var(--aurora);
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    white-space: nowrap;
+    height: max-content;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px var(--white);
+    margin-bottom: 1vh;
 }
 
+
+.breadcrumb-list li {
+   padding-left: 2rem;
+}
+
+.breadcrumb-list li a {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    outline: 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.breadcrumb-list li a:hover {
+    text-decoration: underline;
+    background-color: var(--lakeblue);
+    padding: 0.75rem;
+    border-radius: 30px;
+    outline: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 510px){
+    
+    .breadcrumb-container {
+        display: none;
+    }
+    
+   
+
+}
